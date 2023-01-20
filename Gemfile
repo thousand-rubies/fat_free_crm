@@ -65,7 +65,7 @@ group :development, :test do
   gem 'headless'
   gem 'byebug'
   gem 'pry-rails' unless ENV["CI"]
-  gem 'factory_bot_rails', '~> 6.0'
+  gem 'factory_bot_rails', '~> 6.2', '>= 6.2.0'
   gem 'rubocop'
   gem 'rainbow'
   gem 'puma' # used by capybara 3
@@ -97,10 +97,10 @@ gem 'mini_racer'
 gem 'nokogiri', '>= 1.8.1'
 gem 'activemodel-serializers-xml'
 gem 'bootsnap', require: false
-gem 'devise', '~>4.6'
+gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'devise-i18n'
 gem "devise-encryptable"
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'activejob'
+gem 'activejob', '>= 6.1.7.1'
 gem 'ransack_ui'
 gem 'bootstrap', '5.0.0'
