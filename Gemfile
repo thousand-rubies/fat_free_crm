@@ -60,7 +60,7 @@ end
 
 group :development, :test do
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.0'
   gem 'rspec-activemodel-mocks'
   gem 'headless'
   gem 'byebug'
@@ -75,7 +75,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.0.2'
   gem 'zeus', platform: :ruby unless ENV["CI"]
   gem 'timecop'
   gem 'sqlite3', '~> 1.4.0'
@@ -97,10 +97,10 @@ gem 'mini_racer'
 gem 'nokogiri', '>= 1.8.1'
 gem 'activemodel-serializers-xml'
 gem 'bootsnap', require: false
-gem 'devise', '~>4.6'
-gem 'devise-i18n'
+gem 'devise', '~> 4.9', '>= 4.9.0'
+gem 'devise-i18n', '>= 1.10.3'
 gem "devise-encryptable"
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'activejob'
+gem 'activejob', '>= 6.1.7.5'
 gem 'ransack_ui'
-gem 'bootstrap', '5.0.0'
+gem 'bootstrap', '5.0.1'
