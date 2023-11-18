@@ -65,7 +65,7 @@ group :development, :test do
   gem 'headless'
   gem 'byebug'
   gem 'pry-rails' unless ENV["CI"]
-  gem 'factory_bot_rails', '~> 6.0'
+  gem 'factory_bot_rails', '~> 6.3', '>= 6.3.0'
   gem 'rubocop'
   gem 'rainbow'
   gem 'puma' # used by capybara 3
