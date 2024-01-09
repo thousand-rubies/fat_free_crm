@@ -68,7 +68,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 6.0'
   gem 'rubocop'
   gem 'rainbow'
-  gem 'puma' # used by capybara 3
+  gem 'puma', '>= 5.6.8' , '>= 5.6.8' # used by capybara 3
 end
 
 group :test do
