@@ -66,15 +66,15 @@ group :development, :test do
   gem 'byebug'
   gem 'pry-rails' unless ENV["CI"]
   gem 'factory_bot_rails', '~> 6.0'
-  gem 'rubocop'
+  gem 'rubocop', '>= 1.29.0'
   gem 'rainbow'
   gem 'puma' # used by capybara 3
 end
 
 group :test do
   gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+  gem 'selenium-webdriver', '>= 4.2.0'
+  gem 'webdrivers', '>= 5.0.0'
   gem 'database_cleaner'
   gem 'zeus', platform: :ruby unless ENV["CI"]
   gem 'timecop'
