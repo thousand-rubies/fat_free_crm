@@ -60,7 +60,7 @@ end
 
 group :development, :test do
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'rspec-activemodel-mocks'
   gem 'headless'
   gem 'byebug'
