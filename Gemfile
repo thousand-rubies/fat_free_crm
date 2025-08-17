@@ -75,7 +75,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.0.2'
   gem 'zeus', platform: :ruby unless ENV["CI"]
   gem 'timecop'
   gem 'sqlite3', '~> 1.4.0'
@@ -102,5 +102,5 @@ gem 'devise-i18n'
 gem "devise-encryptable"
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'activejob'
-gem 'ransack_ui'
+gem 'ransack_ui', '>= 2.0.0'
 gem 'bootstrap', '5.0.0'
